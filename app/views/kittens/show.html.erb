@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<tr>
+		<%= render @kitten %>
+	</tr>
+</table>
+
+<%= link_to 'Edit', edit_kitten_path(@kitten) %> |
+<%= link_to 'Back', kittens_path %>
+<%= link_to 'Delete', kitten_path(@kitten), data: {:confirm=> "Are you sure?"}, method: :delete %>
